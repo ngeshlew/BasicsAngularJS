@@ -1,23 +1,21 @@
 <!-- index.html -->
     <!DOCTYPE html>
-    <html>
+    <html ng="scotchApp">
     <head>
       <!-- SCROLLS -->
       <!-- load bootstrap and fontawesome via CDN -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
 
       <!-- SPELLS -->
       <!-- load angular and angular route via CDN -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.0/angular.js"></script>
-      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.0/angular-animate.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+          <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
       <script src="script.js"></script>
     </head>
-    <body ng-app="scotchApp"> 
-<!-- 
-       
+    <body ng-controller="mainController">
+
+        <!-- HEADER AND NAVBAR -->
         <header>
             <nav class="navbar navbar-default">
             <div class="container">
@@ -32,14 +30,14 @@
                 </ul>
             </div>
             </nav>
-        </header> -->
+        </header>
 
         <!-- MAIN CONTENT AND INJECTED VIEWS -->
         <div id="main">
-        
+
             <!-- angular templating -->
             <!-- this is where content will be injected -->
-            <div  class="page {{ pageClass }}" ng-view></div>
+
         </div>
 
     </body>
