@@ -6,11 +6,13 @@
       <!-- load bootstrap and fontawesome via CDN -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+      <link rel="stylesheet" href="style.css">
 
       <!-- SPELLS -->
       <!-- load angular and angular route via CDN -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.0/angular.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-          <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
       <script src="script.js"></script>
     </head>
     <body ng-controller="mainController"> 
@@ -37,7 +39,7 @@
         
             <!-- angular templating -->
             <!-- this is where content will be injected -->
-            <div ng-view></div>
+            <div  class="page {{ pageClass }}" ng-view></div>
         </div>
 
     </body>
